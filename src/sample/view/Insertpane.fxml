@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane fx:id="insertFlowpane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.InsertpaneController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="332.0" prefWidth="533.0">
+         <children>
+            <Label prefHeight="46.0" prefWidth="205.0" text="Student Form" textFill="#9e3c26f2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="38.0" prefWidth="160.0" text="Student Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="nameTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="56.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="159.0" text="Roll No">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="rollnoTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="156.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="158.0" text="Phone No">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="phonenoTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="247.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="160.0" text="Address">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addressTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="271.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="160.0" text="GPA">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="gpaTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="284.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="resetButton" mnemonicParsing="false" text="Reset" defaultButton="true">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="saveButton" layoutX="251.0" layoutY="22.0" mnemonicParsing="false" text="Save" defaultButton="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <ColorAdjust brightness="-0.02" contrast="0.07" hue="-0.07" saturation="0.07" />
+   </effect>
+</FlowPane>
